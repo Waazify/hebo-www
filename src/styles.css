@@ -223,15 +223,16 @@ nav {
         right: -100%;
         width: 80%;
         max-width: 400px;
-        height: 100vh;
-        background-color: white;
+        height: 90vh;
+        background-color: #AFCFFF;
         flex-direction: column;
         padding: 80px 20px 20px;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         transition: right 0.3s ease;
         z-index: 99;
-        border-radius: 0;
+        border-radius: 0 0 0 16px;
         overflow-y: auto;
+        align-items: center;
     }
     
     .nav-links.active {
@@ -243,12 +244,19 @@ nav {
         padding: 12px 16px;
         border-radius: 8px;
         margin-bottom: 8px;
+        justify-content: center;
     }
     
     .sign-up-btn {
         width: 100%;
         text-align: center;
         margin-top: 16px;
+        display: block;
+    }
+    
+    /* Hide the original sign-up button in the nav */
+    nav > .sign-up-btn {
+        display: none;
     }
     
     /* Hamburger menu animation */
@@ -285,6 +293,7 @@ nav {
     .nav-links {
         width: 100%;
         max-width: none;
+        border-radius: 0 0 0 16px;
     }
 }
 
